@@ -2,7 +2,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #111;
@@ -29,50 +29,46 @@
     top: 0;
     right: 20px;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 #menu-button {
     position: fixed;
     top: 20px;
     left: 15px;
-    z-index: 1000;
-    font-size: 30px;
+    z-index: 1;
     cursor: pointer;
+    font-size: 30px;
+    /* Размер кнопки меню */
 }
 
 #heading-text {
-    position: relative;
-    top: 10px;
-    left: 10%;
+    margin-top: 20px;
+    margin-left: 10%;
+    /* Отступ сверху для заголовка */
 }
 
 #text {
-    position: relative;
-    left: 10%;
+    margin-left: 10%;
+    /* Отступ слева для текста */
+    margin-right: 10%;
+    /* Отступ справа для текста */
 }
 
-#text ul {
-    width: 60%;
+.p-list--divided {
+    padding-left: 20px;
+    /* Отступ слева для списка */
 }
 
 .big-text {
-
     font-size: 25px;
+    /* Размер шрифта для большого текста */
     color: white;
+    /* Цвет текста */
     background-color: gray;
+    /* Цвет фона */
 }
 
 .main-text {
     font-size: 20px;
-}
-
-@media screen and (max-height: 450px) {
-    #sidenav {
-        padding-top: 15px;
-    }
-
-    #sidenav a {
-        font-size: 18px;
-    }
+    /* Размер шрифта для основного текста */
 }
