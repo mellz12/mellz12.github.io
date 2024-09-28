@@ -2,8 +2,52 @@
 <html lang="ru">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header id="navigation" class="p-navigation is-dark">
+        <div class="p-navigation__row--25-75">
+            <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="#">
+
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <button class="js-search-button p-navigation__link--search-toggle">
+                            <span class="p-navigation__search-label">Search</span>
+                        </button>
+                    </li>
+                    <li class="p-navigation__item">
+                        <button class="js-menu-button p-navigation__link">Menu</button>
+                    </li>
+                </ul>
+            </div>
+            <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item is-selected">
+                        <a class="p-navigation__link" href="#">Главная</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="#">О нас</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
     <title>Безопасность Web-ресурсов</title>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
     <link rel="stylesheet" href="css/styles.css">
@@ -36,7 +80,7 @@
             системного администратора и от компетенций всех пользователей, имеющих доступ к чувствительной информации.
         </p>
         <p class="main-text"><b>То есть причинами угроз безопасности — взломов и утечек данных — могут быть:</b></p>
-        <ul class="p-list--divided">    
+        <ul class="p-list--divided">
             <li class="p-list__item has-bullet">Уязвимости самого сайта / приложения перед кибератакой — например,
                 отсутствие защиты от перебора паролей, возможность внедрения стороннего кода (XSS, SQL‑инъекции,
                 отсутствие защиты от CSRF).</li>
@@ -59,6 +103,15 @@
         }
     </script>
 
+    <footer class="l-footer--sticky p-strip--highlighted">
+        <nav class="row" aria-label="Footer">
+            <div class="has-cookie">
+                <p>© 2024 Petrik Daniil. Все права защищены</p>
+                <span class="u-off-screen"><a href="#">Go to the top of the page</a></span>
+            </div>
+        </nav>
+    </footer>
+    </div>
 </body>
 
 </html>

@@ -12,7 +12,8 @@
 }
 
 #sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 20px 8px 8px 32px;
+    top: 10%;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
@@ -26,14 +27,14 @@
 
 #sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 9%;
+    right: 5%;
     font-size: 36px;
 }
 
 #menu-button {
     position: fixed;
-    top: 20px;
+    top: 12%;
     left: 15px;
     z-index: 1;
     cursor: pointer;
