@@ -15,13 +15,13 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
 }
 
 #sidenav a:hover {
-    color: #f1f1f1;
+    color: #6b6b6b;
 }
 
 #sidenav .closebtn {
@@ -44,18 +44,23 @@
 #heading-text {
     margin-top: 20px;
     margin-left: 10%;
+    margin-right: 20px;
     /* Отступ сверху для заголовка */
+}
+
+#heading-text h2 {
+    font-size: 35px
 }
 
 #text {
     margin-left: 10%;
     /* Отступ слева для текста */
-    margin-right: 10%;
-    /* Отступ справа для текста */
+    text-align: justify;
 }
 
 .p-list--divided {
-    padding-left: 20px;
+    padding-left: 10px;
+    margin-right: 10%;
     /* Отступ слева для списка */
 }
 
@@ -64,11 +69,92 @@
     /* Размер шрифта для большого текста */
     color: white;
     /* Цвет текста */
-    background-color: gray;
+    background-color: rgb(32, 31, 105);
     /* Цвет фона */
 }
 
 .main-text {
     font-size: 20px;
+
     /* Размер шрифта для основного текста */
+}
+
+@media (max-width: 600px) {
+
+    #sidenav {
+        width: 200px;
+        /* Уменьшаем ширину сайдбара для мобильных устройств */
+        padding-top: 60px;
+        /* Отступ сверху для удобства при открытом меню */
+        transition: width 0.5s ease;
+        /* Плавный переход ширины сайдбара */
+    }
+
+    #menu-button {
+        top: 15px;
+        /* Корректируем отступы кнопки меню */
+        left: 15px;
+        font-size: 28px;
+        /* Уменьшаем размер кнопки меню для маленьких экранов */
+    }
+
+    #heading-text h1 {
+        font-size: 1.5em;
+        /* Уменьшаем размер заголовка на мобильных устройствах */
+        text-align: center;
+        /* Центрируем заголовок */
+        margin-left: auto;
+        /* Центрируем текст по горизонтали */
+        margin-right: auto;
+        width: fit-content;
+        /* Уменьшаем ширину заголовка до его содержимого */
+    }
+
+    #heading-text h2 {
+        font-size: 1.2em;
+        /* Уменьшаем размер подзаголовка на мобильных устройствах */
+        text-align: center;
+        /* Центрируем подзаголовок */
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    #text {
+        margin-left: 5%;
+        /* Уменьшаем отступы текста на мобильных устройствах */
+        margin-right: 5%;
+        font-size: 14px;
+        /* Уменьшаем размер шрифта текста на мобильных устройствах */
+        line-height: 1.4;
+        /* Увеличиваем межстрочный интервал для лучшей читаемости */
+
+        /* Выравнивание текста по ширине */
+    }
+
+
+    .big-text,
+    .main-text {
+        font-size: smaller;
+        /* Уменьшаем размер шрифта в больших текстах на мобильных устройствах */
+        line-height: normal;
+        /* Нормализуем межстрочный интервал для больших текстов на мобильных устройствах */
+    }
+
+}
+
+/* Медиазапросы для очень маленьких экранов (например, менее 320 пикселей) */
+@media (max-width: 320px) {
+
+    #menu-button {
+        font-size: 24px;
+        /* Уменьшаем размер кнопки меню еще больше для очень маленьких экранов */
+    }
+
+    #heading-text h1,
+    #heading-text h2,
+    #text p {
+        font-size: smaller;
+        /* Дальнейшее уменьшение размера шрифта на очень маленьких экранах */
+    }
 }
