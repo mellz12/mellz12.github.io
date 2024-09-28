@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header id="navigation" class="p-navigation is-dark">
+        <div class="p-navigation__row--25-75">
+            <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="#">
+
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a href="index.html">
+                            <button class="js-menu-button p-navigation__link">Главная</button>
+                        </a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <button class="js-menu-button p-navigation__link">Menu</button>
+                    </li>
+                </ul>
+            </div>
+            <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <title>Безопасность Web-ресурсов</title>
-    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.7.0.min.css">
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,7 +61,47 @@
         <a href="contacts.html">Контакты</a>
     </div>
 
-    <span id="menu-button" onclick="openNav()">&#9776; Меню</span>
+    <span id="menu-button" onclick="openNav()">&#9776;</span>
+
+    <div id="heading-text">
+        <h1>Угрозы безопасности Web-ресурсов</h1>
+    </div>
+    <div id="text">
+        <div class="main-text">Веб-ресурсы сталкиваются с множеством угроз, которые могут привести к утечкам данных,
+            несанкционированному доступу и другим серьезным последствиям. Ниже представлены основные типы угроз
+            безопасности веб-приложений и рекомендации по их предотвращению.
+        </div>
+        <div class="main-text"><b>Основные виды угроз:</b></div>
+        <ul class="p-list--divided">
+            <li class="p-list__item has-bullet"><b>Несанкционированный доступ. </b>В 84% исследованных веб-приложений
+                были
+                выявлены уязвимости, позволяющие
+                злоумышленникам получить доступ к личным кабинетам пользователей, включая администраторов. Это может
+                привести к краже данных и управлению функциональностью приложения</li>
+            <li class="p-list__item has-bullet"><b>Межсайтовый скриптинг (XSS).</b>
+                XSS-атаки позволяют злоумышленникам внедрять вредоносные скрипты на страницы, которые просматривают
+                другие пользователи. Это может использоваться для кражи куки и других конфиденциальных данных</li>
+            <li class="p-list__item has-bullet"><b>SQL-инъекции.</b>
+                Этот тип атаки происходит, когда злоумышленник вводит вредоносный SQL-код в поля ввода, что может
+                привести к доступу к базе данных и утечке конфиденциальной информации</li>
+            <li class="p-list__item has-bullet"><b>Межсайтовая подделка запросов (CSRF).</b>
+                CSRF-атаки заставляют аутентифицированных пользователей выполнять нежелательные действия на сайте без их
+                ведома, что может привести к изменениям учетных записей или совершению покупок</li>
+            <li class="p-list__item has-bullet"><b>DDOS-атака.</b>
+                Эти атаки направлены на перегрузку сервера, делая веб-сайт недоступным для пользователей. Злоумышленники
+                отправляют большое количество запросов с различных источников</li>
+            <li class="p-list__item has-bullet"><b>Уязвимости в программном обеспечении.</b>
+                Устаревшее или плохо написанное ПО может содержать уязвимости, которые злоумышленники могут использовать
+                для получения доступа к веб-сайту. Регулярные обновления и использование современных библиотек помогают
+                минимизировать риски.</li>
+        </ul>
+        <div class="main-text">Причинами уязвимости могут стать недостаточная безопасность на этапе разработки
+            Часто компании спешат запустить продукт, пренебрегая мерами безопасности. Это создает уязвимости, которые
+            могут быть использованы злоумышленниками либо использование устаревших компонентов
+            Многие веб-приложения зависят от сторонних библиотек и CMS. Если в одном из компонентов есть уязвимость, это
+            может затронуть все приложения, использующие его.</div>
+
+    </div>
 
     <script>
         function openNav() {
@@ -30,6 +113,15 @@
         }
     </script>
 
+    <footer class="l-footer--sticky p-strip--highlighted">
+        <nav class="row" aria-label="Footer">
+            <div class="has-cookie">
+                <p>© 2024 Petrik Daniil. Все права защищены</p>
+                <span class="u-off-screen"><a href="#">Go to the top of the page</a></span>
+            </div>
+        </nav>
+    </footer>
+    </div>
 </body>
 
 </html>

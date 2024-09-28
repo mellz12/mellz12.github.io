@@ -16,9 +16,9 @@
                 </div>
                 <ul class="p-navigation__items">
                     <li class="p-navigation__item">
-                        <button class="js-search-button p-navigation__link--search-toggle">
-                            <span class="p-navigation__search-label">Search</span>
-                        </button>
+                        <a href="index.html">
+                            <button class="js-menu-button p-navigation__link">Главная</button>
+                        </a>
                     </li>
                     <li class="p-navigation__item">
                         <button class="js-menu-button p-navigation__link">Menu</button>
@@ -27,21 +27,19 @@
             </div>
             <nav class="p-navigation__nav" aria-label="Example main">
                 <ul class="p-navigation__items">
-                    <li class="p-navigation__item is-selected">
-                        <a class="p-navigation__link" href="#">Главная</a>
+                    <li class="p-navigation__item ">
+                        <a class="p-navigation__link" href="index.html">Главная</a>
                     </li>
                     <li class="p-navigation__item">
-                        <a class="p-navigation__link" href="#">О нас</a>
+                        <a class="p-navigation__link" href="about.html">О нас</a>
                     </li>
                     <li class="p-navigation__item">
-                        <a class="p-navigation__link" href="#">Контакты</a>
+                        <a class="p-navigation__link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
                 <ul class="p-navigation__items">
                     <li class="p-navigation__item">
                     </li>
-
-
                 </ul>
             </nav>
         </div>
@@ -73,26 +71,36 @@
     </div>
 
     <div id="text">
-        <p class="big-text">Под безопасностью веб‑сервисов, как правило, понимается обеспечение сохранности данных и их
+        <div class="big-text">Под безопасностью веб‑сервисов, как правило, понимается обеспечение сохранности данных и
+            их
             недоступность для посторонних лиц, а также способность приложения сохранять работоспособность при
-            кибератаках и не подвергаться заражению вирусами.</p>
-        <p class="main-text">Безопасность веб‑приложений зависит от качества их программного кода, от квалификации
-            системного администратора и от компетенций всех пользователей, имеющих доступ к чувствительной информации.
-        </p>
-        <p class="main-text"><b>То есть причинами угроз безопасности — взломов и утечек данных — могут быть:</b></p>
+            кибератаках и не подвергаться заражению вирусами.</div>
+        <div class="main-text">Безопасность веб‑приложений зависит от качества их программного кода, от квалификации
+            системного администратора и от компетенций всех пользователей, имеющих доступ к чувствительной
+            информации.
+        </div>
+        <div class="main-text"><b>То есть причинами угроз безопасности — взломов и утечек данных — могут быть:</b>
+        </div>
         <ul class="p-list--divided">
-            <li class="p-list__item has-bullet">Уязвимости самого сайта / приложения перед кибератакой — например,
+            <li class="p-list__item has-bullet">Уязвимости самого сайта / приложения перед кибератакой —
+                например,
                 отсутствие защиты от перебора паролей, возможность внедрения стороннего кода (XSS, SQL‑инъекции,
                 отсутствие защиты от CSRF).</li>
-            <li class="p-list__item has-bullet">Недостаточное быстродействие системы или повышенная ресурсоёмкость
-                обработки запросов, что приводит к уязвимости к атакам типа «отказ в обслуживании» — (D)DoS.</li>
+            <li class="p-list__item has-bullet">Недостаточное быстродействие системы или повышенная
+                ресурсоёмкость
+                обработки запросов, что приводит к уязвимости к атакам типа «отказ в обслуживании» — (D)DoS.
+            </li>
             <li class="p-list__item has-bullet">Ошибки, допущенные администратором веб‑сервера — несвоевременное
                 обновление ПО или небезопасное конфигурирование сервисов.</li>
-            <li class="p-list__item has-bullet">Незнание или несоблюдение сотрудниками банальных правил безопасности —
+            <li class="p-list__item has-bullet">Незнание или несоблюдение сотрудниками банальных правил
+                безопасности —
                 простые пароли, ввод данных на фишинговых сайтах, заражение вирусами ПК.</li>
         </ul>
     </div>
-
+    <iframe width="720" height="405" src="https://rutube.ru/play/embed/d04d3c072f8e4d98be74536d36ebd0f2/"
+        frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+    </iframe>
+    </div>
     <script>
         function openNav() {
             document.getElementById("sidenav").style.width = "225px";

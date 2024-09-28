@@ -56,10 +56,11 @@
 #text {
     margin-left: 10%;
     /* Отступ слева для текста */
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .p-list--divided {
+    font-size: 20px;
     padding-left: 10px;
     margin-right: 10%;
     /* Отступ слева для списка */
@@ -76,6 +77,9 @@
 
 .main-text {
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
     /* Размер шрифта для основного текста */
 }
@@ -92,9 +96,10 @@
     }
 
     #menu-button {
-        top: 15px;
+        top: 10%;
         /* Корректируем отступы кнопки меню */
         left: 15px;
+        position: absolute;
         font-size: 28px;
         /* Уменьшаем размер кнопки меню для маленьких экранов */
     }
@@ -116,8 +121,8 @@
         /* Уменьшаем размер подзаголовка на мобильных устройствах */
         text-align: center;
         /* Центрируем подзаголовок */
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         width: fit-content;
     }
 
@@ -125,7 +130,7 @@
         margin-left: 5%;
         /* Уменьшаем отступы текста на мобильных устройствах */
         margin-right: 5%;
-        font-size: 14px;
+        font-size: 20px;
         /* Уменьшаем размер шрифта текста на мобильных устройствах */
         line-height: 1.4;
         /* Увеличиваем межстрочный интервал для лучшей читаемости */

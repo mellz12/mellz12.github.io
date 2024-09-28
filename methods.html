@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header id="navigation" class="p-navigation is-dark">
+        <div class="p-navigation__row--25-75">
+            <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="#">
+
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a href="index.html">
+                            <button class="js-menu-button p-navigation__link">Главная</button>
+                        </a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <button class="js-menu-button p-navigation__link">Menu</button>
+                    </li>
+                </ul>
+            </div>
+            <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <title>Безопасность Web-ресурсов</title>
-    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.7.0.min.css">
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,7 +61,66 @@
         <a href="contacts.html">Контакты</a>
     </div>
 
-    <span id="menu-button" onclick="openNav()">&#9776; Меню</span>
+    <span id="menu-button" onclick="openNav()">&#9776;</span>
+
+    <div id="heading-text">
+        <h1>Методы защиты web-ресурсов</h1>
+    </div>
+    <div id="text">
+        <div class="main-text">Защита веб-ресурсов от киберугроз является важной задачей для обеспечения безопасности
+            данных и сохранности репутации бизнеса. Существует множество методов и практик, которые могут помочь в этом.
+            Рассмотрим основные из них.
+        </div>
+        <ol class="p-list--divided">
+            <li class="p-list__item"><b>Использование WAF (Web Application Firewall).</b>
+                <div class="main-text">WAF предоставляет защиту от различных атак, таких как SQL-инъекции, XSS и DDoS.
+                    Он фильтрует и отслеживает HTTP-запросы, блокируя подозрительную активность. Для максимальной
+                    эффективности WAF необходимо настраивать в соответствии с особенностями веб-сайта и регулярно
+                    обновлять правила фильтрации.</div>
+            </li>
+            <li class="p-list__item"><b>Шифрование данных.</b>
+                <div class="main-text">Применение SSL/TLS для шифрования данных передаваемых между сервером и клиентом
+                    защищает информацию от перехвата. Это особенно важно для сайтов, обрабатывающих конфиденциальные
+                    данные, такие как личные данные пользователей или финансовая информация.</div>
+            </li>
+            <li class="p-list__item"><b>Валидация и фильтрация ввода.</b>
+                <div class="main-text">Правильная валидация и фильтрация данных, вводимых пользователями, помогают
+                    предотвратить атаки типа SQL-инъекций и XSS. Рекомендуется использовать подготовленные запросы и
+                    параметризованные запросы при работе с базами данных, а также экранировать все пользовательские
+                    вводы.</div>
+            </li>
+            <li class="p-list__item"><b>Защита от CSRF-атак.</b>
+                <div class="main-text">Для защиты от межсайтовой подделки запросов (CSRF) следует использовать
+                    уникальные токены для каждой сессии пользователя. Эти токены должны передаваться вместе с каждым
+                    запросом, требующим аутентификации, чтобы убедиться, что запрос исходит от легитимного пользователя.
+                </div>
+            </li>
+            <li class="p-list__item"><b>Регулярное обновление ПО.</b>
+                <div class="main-text">Обновление программного обеспечения и библиотек помогает устранить известные
+                    уязвимости. Это включает в себя не только веб-приложения, но и серверное ПО, а также системы
+                    управления базами данных.</div>
+            </li>
+            <li class="p-list__item"><b>Ограничение доступа.</b>
+                <div class="main-text">Принцип минимальных привилегий подразумевает предоставление доступа к ресурсам
+                    только тем пользователям, которым это действительно необходимо. Это помогает снизить риск
+                    несанкционированного доступа к конфиденциальной информации.</div>
+            </li>
+            <li class="p-list__item"><b>Обучение персонала.</b>
+                <div class="main-text">Регулярные тренинги по кибербезопасности для сотрудников помогают повысить
+                    уровень осведомленности о потенциальных угрозах и методах их предотвращения. Это включает в себя
+                    обучение основам безопасного программирования и распознаванию фишинговых атак.</div>
+            </li>
+            <li class="p-list__item"><b>Мониторинг и аудит безопасности.</b>
+                <div class="main-text">Постоянный мониторинг активности на сайте и аудит безопасности позволяют
+                    своевременно выявлять подозрительные действия и реагировать на инциденты безопасности. Это может
+                    включать использование систем мониторинга активности баз данных (DAM) и анализ поведения
+                    пользователей.</div>
+            </li>
+        </ol>
+        <div class="main-text">Эти методы в сочетании обеспечивают комплексную защиту веб-ресурсов от множества угроз и
+            помогают поддерживать высокий уровень безопасности данных пользователей.</div>
+
+    </div>
 
     <script>
         function openNav() {
@@ -30,6 +132,15 @@
         }
     </script>
 
+    <footer class="l-footer--sticky p-strip--highlighted">
+        <nav class="row" aria-label="Footer">
+            <div class="has-cookie">
+                <p>© 2024 Petrik Daniil. Все права защищены</p>
+                <span class="u-off-screen"><a href="#">Go to the top of the page</a></span>
+            </div>
+        </nav>
+    </footer>
+    </div>
 </body>
 
 </html>
