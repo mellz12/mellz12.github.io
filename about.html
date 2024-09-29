@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header id="navigation" class="p-navigation is-dark">
+        <div class="p-navigation__row--25-75">
+            <div class="p-navigation__banner">
+                <div class="p-navigation__tagged-logo">
+                    <a class="p-navigation__link" href="#">
+
+                    </a>
+                </div>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a href="index.html">
+                            <button class="js-menu-button p-navigation__link">Главная</button>
+                        </a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a href="about.html">
+                            <button class="js-menu-button p-navigation__link">О нас</button>
+                        </a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a href="contacts.html">
+                            <button class="js-menu-button p-navigation__link">Контакты</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="p-navigation__nav" aria-label="Example main">
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="p-navigation__item">
+                        <a class="p-navigation__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="p-navigation__items">
+                    <li class="p-navigation__item">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <title>Безопасность Web-ресурсов</title>
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Главная</a>
+        <a href="danger.html">Угрозы безопасности</a>
+        <a href="methods.html">Методы защиты</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+    </div>
+
+    <span id="menu-button" onclick="openNav()">&#9776;</span>
+
+    <div id="heading-text">
+        <h1>О нас</h1>
+    </div>
+    <div id="text">
+        <div class="main-text"><b>Кто мы?</b></div>
+        <div class="main-text">Мы — команда экспертов в области кибербезопасности с многолетним опытом работы в защите
+            веб-ресурсов. Наша команда состоит из профессионалов с различными навыками: от разработки безопасного
+            программного обеспечения до анализа уязвимостей и внедрения современных технологий защиты.</div>
+        <div class="main-text"><b>Что мы делаем?</b>
+        </div>
+        <ol class="p-list--divided">
+            <li class="p-list__item has-bullet"><b>Консультация по безопасности:</b>Помогаем компаниям оценить их
+                текущие меры безопасности и разработать стратегии для защиты от потенциальных угроз.
+            </li>
+            <li class="p-list__item"><b>Обучение и семинары:</b>Проводим тренинги для сотрудников организаций, чтобы
+                повысить уровень осведомленности о киберугрозах и методах защиты.
+            </li>
+            <li class="p-list__item"><b>Аудит безопасности:</b>Проводим комплексные проверки веб-приложений на наличие
+                уязвимостей и предоставляем рекомендации по их устранению.
+            </li>
+            <li class="p-list__item"><b>Ресурсы и статьи:</b>Мы регулярно публикуем актуальные новости, исследования и
+                советы по безопасности веб-ресурсов, чтобы наши пользователи были в курсе последних тенденций и угроз.
+            </li>
+            <div class="main-text"><b>Присоединяйтесь к нам</b></div>
+            <div class="main-text">Защита вашего веб-ресурса — это не просто задача, это необходимость. Присоединяйтесь
+                к нам на пути к безопасному интернету! Если у вас есть вопросы или вы хотите узнать больше о наших
+                услугах, не стесняйтесь связаться с нами. Мы всегда готовы помочь вам обеспечить безопасность ваших
+                данных и веб-приложений.</div>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "225px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+
+    <footer class="l-footer--sticky p-strip--highlighted">
+        <nav class="row" aria-label="Footer">
+            <div class="has-cookie">
+                <p>© 2024 Petrik Daniil. Все права защищены</p>
+                <span class="u-off-screen"><a href="#">Go to the top of the page</a></span>
+            </div>
+        </nav>
+    </footer>
+    </div>
+</body>
+
+</html>
