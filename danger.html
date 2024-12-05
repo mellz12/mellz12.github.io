@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Безопасность Web-ресурсов</title>
     <header id="navigation" class="p-navigation is-dark">
         <div class="p-navigation__row--25-75">
             <div class="p-navigation__banner">
@@ -52,7 +52,7 @@
         </div>
     </header>
 
-    <title>Безопасность Web-ресурсов</title>
+
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -102,12 +102,57 @@
                 для получения доступа к веб-сайту. Регулярные обновления и использование современных библиотек помогают
                 минимизировать риски.</li>
         </ul>
+        <table class="p-table">
+            <thead>
+                <tr>
+                    <th>Угроза информационной безопасности</th>
+                    <th>Доля угроз. %</th>
+                    <th>Доля уязвимых сайтов, %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Межсайтовый скриптинг (XSS)</td>
+                    <td>19,23</td>
+                    <td>27,27</td>
+                </tr>
+                <tr>
+                    <td>SQL-инъекции</td>
+                    <td>17,65</td>
+                    <td>49,35</td>
+                </tr>
+                <tr>
+                    <td>Уязвимости в программном обеспечении</td>
+                    <td>11,09</td>
+                    <td>37,36</td>
+                </tr>
+                <tr>
+                    <td>Несанкционированный доступ</td>
+                    <td>12,44</td>
+                    <td>37,66</td>
+                </tr>
+                <tr>
+                    <td>Межсайтовая подделка запросов (CSRF)</td>
+                    <td>2</td>
+                    <td>7,79</td>
+                </tr>
+                <tr>
+                    <td>DDOS-атака</td>
+                    <td>26,05</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Прочие</td>
+                    <td>11,54</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
         <div class="main-text">Причинами уязвимости могут стать недостаточная безопасность на этапе разработки
             Часто компании спешат запустить продукт, пренебрегая мерами безопасности. Это создает уязвимости, которые
             могут быть использованы злоумышленниками либо использование устаревших компонентов
             Многие веб-приложения зависят от сторонних библиотек и CMS. Если в одном из компонентов есть уязвимость, это
             может затронуть все приложения, использующие его.</div>
-
     </div>
 
     <script>
